@@ -19,4 +19,4 @@ INSERT INTO menu_items (name, description, price, category, available, image_url
 ('Gulab Jamun (2 pcs)', 'Soft milk dumplings soaked in sugar syrup', 35.00, 'Desserts', true, NULL),
 ('Ice Cream Cup', 'Vanilla ice cream cup', 30.00, 'Desserts', true, NULL),
 ('French Fries', 'Crispy salted potato fries', 50.00, 'Snacks', true, NULL),
-('Egg Puff', 'Flaky pastry with spiced boiled egg filling', 30.00, 'Snacks', false, NULL);
+('Egg Puff', 'Flaky pastry with spiced boiled egg filling', 30.00, 'Snacks', false, NULL)ON CONFLICT (name) DO NOTHING;;
