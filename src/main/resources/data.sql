@@ -4,7 +4,7 @@
 -- MenuItem entity itself, so Hibernate creates it once via ddl-auto=update)
 -- so re-running the app won't create duplicate rows.
 
-INSERT IGNORE INTO menu_items (name, description, price, category, available, image_url) VALUES
+INSERT INTO menu_items (name, description, price, category, available, image_url) VALUES
 ('Masala Dosa', 'Crispy rice crepe filled with spiced potato filling, served with sambar & chutney', 60.00, 'Meals', true, NULL),
 ('Veg Puff', 'Flaky pastry filled with spiced mixed vegetables', 25.00, 'Snacks', true, NULL),
 ('Samosa', 'Deep-fried pastry with a savoury potato and pea filling', 20.00, 'Snacks', true, NULL),
